@@ -1,0 +1,19 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+header {
+	display: flex;
+	justify-content: space-between;
+	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo-container {
+	margin-left: 160px;
+	display: flex;
+	align-items: center;
+}
+
+.header-img {
+	cursor: pointer;
+}
