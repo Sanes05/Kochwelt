@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/logo_small.png"
+			type="image/x-icon"
+		/>
+		<link rel="stylesheet" href="../css/fonts.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="./contact.css" />
+		<title>Kontakt</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img
+					class="header-img"
+					onclick="location.href='./index.html'"
+					src="../assets/img/logo.png"
+					alt="Kochwelt-Logo"
+				/>
+			</div>
+			<nav class="navbar">
+				<a href="../index.html" class="nav-items nav-items-black">Start</a>
+				<a href="../rezept-des-tages.html" class="nav-items nav-items-black"
+					>Rezept des Tages</a
+				>
+				<a href="../kontakt.html" class="nav-items nav-items-green">Kontakt</a>
+				<a href="../impressum.html" class="nav-items nav-items-black"
+					>Impressum</a
+				>
+			</nav>
+		</header>
+		<div class="contac-form-container">
+			<form action="" class="form-main">
+				<label for="name"> Name </label>
+				<input
+					class="contact-input"
+					id="name"
+					name="name"
+					type="text"
+					placeholder="Name"
+				/>
+				<label for="email">E-mail</label>
+				<input
+					class="contact-input"
+					id="email"
+					name="email"
+					type="email"
+					placeholder="E-mail"
+				/>
+				<label for="message">Nachricht</label>
+				<textarea
+					placeholder="Ihre Nachricht Kommt hier rein"
+					class="contact-textarea"
+					name="message"
+					id="message"
+				></textarea>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,10 @@
+.contac-form-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 80px;
+}
+
+.form-main {
+	display: flex;
+	flex-direction: column;
+}
