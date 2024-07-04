@@ -47,6 +47,7 @@ label {
 	display: flex;
 	justify-content: center;
 	font-size: 24px;
+	font-weight: 500;
 }
 
 .error-message {
@@ -59,4 +60,21 @@ label {
 
 .error-border {
 	border-color: red;
+}
+
+@media (max-width: 450px) {
+	.contact-headline {
+		font-size: 58px;
+	}
+	.form-main {
+		width: 250px;
+	}
+	label {
+		font-size: 24px;
+		color: black;
+		font-weight: 500;
+	}
+	.contact-input {
+		font-size: 16px;
+	}
 }
