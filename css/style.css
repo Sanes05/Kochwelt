@@ -33,11 +33,16 @@ header {
 }
 
 .nav-items-green {
-	color: green;
-	border-bottom: 2px solid green;
+	color: #00bd00;
+	border-bottom: 2px solid #00bd00;
+	font-weight: 500;
 }
 .nav-items-black {
 	color: black;
+}
+.nav-items-black:hover {
+	color: #00bd00;
+	border-bottom: 2px solid #00bd00;
 }
 
 /* Header Ende */
