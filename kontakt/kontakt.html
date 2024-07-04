@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link
 			rel="shortcut icon"
-			href="./assets/img/logo_small.png"
+			href="../assets/img/logo_small.png"
 			type="image/x-icon"
 		/>
 		<link rel="stylesheet" href="../css/fonts.css" />
@@ -18,7 +18,7 @@
 			<div class="logo-container">
 				<img
 					class="header-img"
-					onclick="location.href='./index.html'"
+					onclick="location.href='../index.html'"
 					src="../assets/img/logo.png"
 					alt="Kochwelt-Logo"
 				/>
@@ -28,14 +28,18 @@
 				<a href="../rezept-des-tages.html" class="nav-items nav-items-black"
 					>Rezept des Tages</a
 				>
-				<a href="../kontakt.html" class="nav-items nav-items-green">Kontakt</a>
+				<a href="./kontakt.html" class="nav-items nav-items-green">Kontakt</a>
 				<a href="../impressum.html" class="nav-items nav-items-black"
 					>Impressum</a
 				>
 			</nav>
 		</header>
 		<div class="contac-form-container">
-			<form action="" class="form-main">
+			<form
+				action="https://formspree.io/f/xblrjkbr"
+				method="POST"
+				class="form-main"
+			>
 				<label for="name"> Name </label>
 				<input
 					class="contact-input"
@@ -59,6 +63,7 @@
 					name="message"
 					id="message"
 				></textarea>
+				<button class="submit-btn" type="submit">Nachricht Senden</button>
 			</form>
 		</div>
 	</body>
