@@ -3,45 +3,27 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Burger Menu</title>
+		<title>Burger Menü wie Chefkoch.de</title>
 		<link rel="stylesheet" href="./css/burger-menu.css" />
 		<link rel="stylesheet" href="./css/fonts.css" />
-		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<section class="burger-menu-main">
-			<div class="logo-burger-menu-container">
-				<img
-					src="./assets/img/logo.png"
-					alt="Kochwelt Logo"
-					class="burger-menu-logo"
-				/>
+		<header>
+			<div class="burger-menu" id="burger-menu">
+				<span></span>
+				<span></span>
+				<span></span>
 			</div>
-			<div class="burger-menu-main-container">
-				<div id="burger-menu" class="burger-menu-main">
-					<nav class="nav-burger-menu">
-						<a href="./index.html" class="burger-menu-a nav-items-black"
-							>Start
-						</a>
-						<a
-							href="./rezept-des-tages.html"
-							class="burger-menu-a nav-items-black"
-						>
-							Rezept des Tages</a
-						>
-						<a
-							href="./kontakt/kontakt.html"
-							class="burger-menu-a nav-items-black"
-						>
-							Kontakt</a
-						>
-						<a href="./impressum.html" class="burger-menu-a nav-items-black"
-							>Impressum</a
-						>
-					</nav>
-				</div>
-			</div>
-		</section>
+		</header>
+		<nav class="side-nav" id="side-nav">
+			<ul>
+				<li><a href="./index.html">Start</a></li>
+				<li><a href="./rezept-des-tages.html">Rezept des tages</a></li>
+				<li><a href="#community">Kontakt</a></li>
+				<li><a href="#magazin">Impressum</a></li>
+			</ul>
+		</nav>
+		<div class="overlay" id="overlay"></div>
 		<script src="./js/app.js"></script>
 	</body>
 </html>

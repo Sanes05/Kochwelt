@@ -81,47 +81,8 @@ header {
 	.logo-container {
 		display: none;
 	}
-	.burger-icon {
-		display: flex;
-		font-size: 80px;
-		margin-left: 60px;
-	}
-	.burger-menu-main-container {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: row;
-	}
 }
 
-/* test */
-.burger-menu-main {
-	display: none;
-}
-.burger-menu-main-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.show-burger-menu {
-	display: flex;
-}
-
-.nav-burger-menu {
-	display: flex;
-	flex-direction: column;
-	margin-right: 16px;
-	justify-content: center;
-	align-items: center;
-}
-.burger-menu-a {
-	text-decoration: none;
-	margin-top: 15px;
-	text-align: center;
-}
-/* test ende */
 /* Header Ende */
 
 /* Startseite Anfang */

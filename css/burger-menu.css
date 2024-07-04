@@ -1,15 +1,69 @@
+/* CSS für das Burger-Menü und die Sidebar Navigation */
+
+/* Standardmäßiges Burger Menü Icon */
+.burger-icon {
+	font-size: 24px;
+	cursor: pointer;
+	display: none; /* Nur auf kleinen Bildschirmen sichtbar */
+	z-index: 1001; /* Über dem Header */
+}
+/* Das Burger Menü selbst */
 .burger-menu-main {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	display: none; /* Versteckt das Menü standardmäßig */
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 100%;
+	background-color: #fff;
+	box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+	z-index: 1002; /* Über dem Overlay */
+	padding-top: 60px;
+	transition: transform 0.3s ease;
+	transform: translateX(-100%); /* Schiebt das Menü außerhalb des Bildschirms */
 }
 
-.burger-menu-logo {
-	width: 200px;
-	height: 60px;
+.burger-menu-main.active {
+	display: block;
+	transform: translateX(0); /* Zeigt das Menü an */
 }
-.nav-burger-menu {
-	display: flex;
-	flex-direction: column;
+
+.burger-menu-a {
+	display: block;
+	padding: 15px 20px;
+	color: #333;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.burger-menu-a:hover {
+	background-color: #f4f4f4;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	z-index: 1000; /* Über dem restlichen Inhalt */
+}
+
+.overlay.active {
+	display: block;
+}
+
+@media (max-width: 850px) {
+	.burger-icon {
+		display: block; /* Zeigt das Burger-Icon auf Bildschirmen bis 1000px */
+		justify-content: center;
+		align-items: center;
+		font-size: 80px;
+	}
+
+	.navbar {
+		display: none; /* Versteckt die Standard-Navigation auf Bildschirmen bis 1000px */
+	}
 }
