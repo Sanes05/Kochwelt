@@ -86,6 +86,12 @@ header {
 		font-size: 80px;
 		margin-left: 60px;
 	}
+	.burger-menu-main-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+	}
 }
 
 /* test */
