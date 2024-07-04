@@ -1,4 +1,5 @@
-function toggleMenu() {
-	var menu = document.querySelector(".navbar");
-	menu.classList.toggle("show");
+function ToggleMenu() {
+	const menu = document.getElementById("burger-menu");
+
+	menu.classList.toggle("show-burger-menu");
 }

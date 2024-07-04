@@ -22,10 +22,25 @@
 					alt="Kochwelt-Logo"
 				/>
 			</div>
-			<div class="burger-menu" onclick="toggleMenu()">
-				&#9776;
-				<!-- Dies ist das Burger-Symbol -->
+			<div class="burger-menu-main-container">
+				<div class="burger-icon" onclick="ToggleMenu()">&#9776;</div>
+				<div id="burger-menu" class="burger-menu-main">
+					<nav class="nav-burger-menu">
+						<a href="" class="burger-menu-a nav-items-green">Start </a>
+						<a href="" class="burger-menu-a nav-items-black">
+							Rezept des Tages</a
+						>
+						<a
+							href="./kontakt/kontakt.html"
+							class="burger-menu-a nav-items-black"
+						>
+							Kontakt</a
+						>
+						<a href="" class="burger-menu-a nav-items-black">Impressum</a>
+					</nav>
+				</div>
 			</div>
+			<!-- TODO: Burger Menu Machen -->
 			<nav class="navbar">
 				<a href="#" class="nav-items nav-items-green">Start</a>
 				<a href="./rezept-des-tages.html" class="nav-items nav-items-black"

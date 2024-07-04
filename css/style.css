@@ -22,7 +22,7 @@ header {
 }
 
 .navbar {
-	padding-right: 160px;
+	margin-right: 160px;
 	display: flex;
 	align-items: end;
 	gap: 16px;
@@ -44,51 +44,78 @@ header {
 	color: #00bd00;
 	border-bottom: 2px solid #00bd00;
 }
-/* TEST Nicht hinzugefügt */
-.burger-menu {
-	display: none; /* Standardmäßig versteckt */
-	font-size: 30px;
-	cursor: pointer;
-	color: black;
+.burger-icon {
+	display: none;
 }
-@media screen and (max-width: 1000px) {
-	header {
-		flex-direction: row; /* Stapelt das Logo und die Navigation vertikal */
-		align-items: flex-start; /* Positioniert die Elemente links */
-	}
-
+@media (max-width: 1235px) {
 	.logo-container {
-		margin-left: 10px; /* Reduziert den linken Rand auf kleinen Bildschirmen */
+		margin-left: 60px;
+		display: flex;
+		align-items: center;
 	}
-
 	.navbar {
-		display: none; /* Standardmäßig versteckt auf kleinen Bildschirmen */
-		flex-direction: column; /* Stapelt die Navigationselemente vertikal */
-		/* width: 100%; Nimmt die volle Breite des Containers ein */
-		padding-right: 0; /* Entfernt das rechte Padding */
-	}
-
-	.nav-items {
-		width: 100%;
-		text-align: left; /* Links ausgerichtet */
-		border-top: 1px solid #eee; /* Optionale Abgrenzung zwischen Items */
-	}
-
-	.nav-items:last-child {
-		border-bottom: 1px solid #eee;
-	}
-
-	.burger-menu {
-		display: block; /* Zeige das Burger-Menü auf kleinen Bildschirmen */
-		margin: 10px; /* Abstand um das Symbol herum */
-	}
-
-	.navbar.show {
-		display: flex; /* Zeige das Menü, wenn die Klasse `.show` hinzugefügt wird */
+		margin-right: 16px;
+		display: flex;
+		align-items: end;
+		gap: 16px;
 	}
 }
-/* TEST Ende */
+@media (max-width: 1000px) {
+	.nav-items {
+		text-decoration: none;
+		font-size: 16px;
+	}
+}
 
+@media (max-width: 850px) {
+	.navbar {
+		display: none;
+	}
+	.burger-icon {
+		display: flex;
+		font-size: 80px;
+	}
+}
+
+@media (max-width: 600px) {
+	.logo-container {
+		display: none;
+	}
+	.burger-icon {
+		display: flex;
+		font-size: 80px;
+		margin-left: 60px;
+	}
+}
+
+/* test */
+.burger-menu-main {
+	display: none;
+}
+.burger-menu-main-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row-reverse;
+}
+
+.show-burger-menu {
+	display: flex;
+}
+
+.nav-burger-menu {
+	display: flex;
+	flex-direction: column;
+	margin-right: 16px;
+	justify-content: center;
+	align-items: center;
+}
+.burger-menu-a {
+	text-decoration: none;
+	margin-top: 15px;
+	text-align: center;
+}
+/* test ende */
 /* Header Ende */
 
 /* Startseite Anfang */
