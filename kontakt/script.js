@@ -7,7 +7,6 @@ function FormValidation() {
 		document.getElementById("error-message-email"),
 		document.getElementById("error-message-message"),
 	];
-
 	if (Name == "") {
 		Error[0].innerHTML =
 			"<p class=error-message >Bitte Gebe Einen Namen An</p>";
@@ -21,5 +20,3 @@ function FormValidation() {
 		return false;
 	}
 }
-
-// TODO:Form Valiedierung In html anzeigen
