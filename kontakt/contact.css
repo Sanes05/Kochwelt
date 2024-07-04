@@ -37,3 +37,7 @@ label {
 	display: flex;
 	justify-content: center;
 }
+
+.error-border {
+	border-color: red;
+}
