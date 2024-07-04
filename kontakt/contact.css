@@ -23,11 +23,23 @@
 	padding: 16px 16px 16px 16px;
 	border-radius: 8px;
 	border: 1px solid;
+	color: rgb(0, 0, 0);
+	font-weight: 500;
 }
-.contact-input,
-.contact-textarea::placeholder {
+
+.contact-textarea {
 	font-family: "Raleway";
-	color: rgba(0, 0, 0, 0.3);
+	border: 1px solid;
+	color: rgb(0, 0, 0);
+	font-weight: 500;
+	font-size: 16px;
+}
+.contact-input::placeholder {
+	font-family: "Raleway";
+	color: rgba(0, 0, 0, 0.2);
+}
+.contact-textarea::placeholder {
+	color: rgba(0, 0, 0, 0.2);
 }
 
 .contact-input,
@@ -58,11 +70,12 @@ label {
 
 .error-message {
 	color: red;
-	font-size: 24px;
+	font-size: 16px;
 	margin-top: -30px;
-	display: flex;
-	justify-content: center;
-	text-align: center;
+	/* display: flex;
+	justify-content: center; */
+	text-align: start;
+	padding-left: 16px;
 }
 
 .error-border {
