@@ -17,29 +17,37 @@ function FormValidation() {
 		document.getElementById("error-message-email"),
 		document.getElementById("error-message-message"),
 	];
-	const ErrorChangeBorderColor = [
+	const ErrorFeatures = [
 		document.getElementById("name"),
 		document.getElementById("email"),
 		document.getElementById("message"),
 	];
+
+	ErrorFeatures.forEach((field, index) => {
+		field.addEventListener("input", () => {
+			Error[index].innerHTML = "";
+			field.classList.remove("error-border");
+		});
+	});
+
 	if (Name == "") {
 		Error[0].innerHTML =
 			"<p class=error-message >Bitte gebe einen Namen ein</p>";
-		ErrorChangeBorderColor[0].classList.add("error-border");
+		ErrorFeatures[0].classList.add("error-border");
 		return false;
 	} else if (Email == "") {
 		Error[1].innerHTML = "<p class=error-message >Bitte Gebe Eine Email An</p>";
-		ErrorChangeBorderColor[1].classList.add("error-border");
+		ErrorFeatures[1].classList.add("error-border");
 		return false;
 	} else if (!isValidEmail(Email)) {
 		Error[1].innerHTML =
 			"<p class=error-message >Bitte Gebe Eine Gültiege Email an Email An</p>";
-		ErrorChangeBorderColor[1].classList.add("error-border");
+		ErrorFeatures[1].classList.add("error-border");
 		return false;
 	} else if (Message == "") {
 		Error[2].innerHTML =
 			"<p class=error-message >Bitte Füge Noch eine nachricht hinzu</p>";
-		ErrorChangeBorderColor[2].classList.add("error-border");
+		ErrorFeatures[2].classList.add("error-border");
 		return false;
 	} else {
 		form.action = FormSpreeKey;
