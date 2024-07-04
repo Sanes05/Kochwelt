@@ -34,12 +34,9 @@
 				>
 			</nav>
 		</header>
+		<p>action="https://formspree.io/f/xblrjkbr"</p>
 		<div class="contac-form-container">
-			<form
-				action="https://formspree.io/f/xblrjkbr"
-				method="POST"
-				class="form-main"
-			>
+			<form onsubmit="return FormValidation()" class="form-main" name="MyForm">
 				<label for="name"> Name </label>
 				<input
 					class="contact-input"
@@ -66,5 +63,6 @@
 				<button class="submit-btn" type="submit">Nachricht Senden</button>
 			</form>
 		</div>
+		<script src="./script.js"></script>
 	</body>
 </html>
