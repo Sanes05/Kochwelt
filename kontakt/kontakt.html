@@ -34,9 +34,15 @@
 				>
 			</nav>
 		</header>
-		<p>action="https://formspree.io/f/xblrjkbr"</p>
 		<div class="contac-form-container">
-			<form onsubmit="return FormValidation()" class="form-main" name="MyForm">
+			<form
+				action=""
+				method=""
+				onsubmit="return FormValidation()"
+				class="form-main"
+				name="MyForm"
+				id="MyForm"
+			>
 				<label for="name"> Name </label>
 				<input
 					class="contact-input"
@@ -51,7 +57,7 @@
 					class="contact-input"
 					id="email"
 					name="email"
-					type="email"
+					type="text"
 					placeholder="E-mail"
 				/>
 				<div id="error-message-email"></div>
