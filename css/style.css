@@ -44,6 +44,50 @@ header {
 	color: #00bd00;
 	border-bottom: 2px solid #00bd00;
 }
+/* TEST Nicht hinzugefügt */
+.burger-menu {
+	display: none; /* Standardmäßig versteckt */
+	font-size: 30px;
+	cursor: pointer;
+	color: black;
+}
+@media screen and (max-width: 1000px) {
+	header {
+		flex-direction: row; /* Stapelt das Logo und die Navigation vertikal */
+		align-items: flex-start; /* Positioniert die Elemente links */
+	}
+
+	.logo-container {
+		margin-left: 10px; /* Reduziert den linken Rand auf kleinen Bildschirmen */
+	}
+
+	.navbar {
+		display: none; /* Standardmäßig versteckt auf kleinen Bildschirmen */
+		flex-direction: column; /* Stapelt die Navigationselemente vertikal */
+		/* width: 100%; Nimmt die volle Breite des Containers ein */
+		padding-right: 0; /* Entfernt das rechte Padding */
+	}
+
+	.nav-items {
+		width: 100%;
+		text-align: left; /* Links ausgerichtet */
+		border-top: 1px solid #eee; /* Optionale Abgrenzung zwischen Items */
+	}
+
+	.nav-items:last-child {
+		border-bottom: 1px solid #eee;
+	}
+
+	.burger-menu {
+		display: block; /* Zeige das Burger-Menü auf kleinen Bildschirmen */
+		margin: 10px; /* Abstand um das Symbol herum */
+	}
+
+	.navbar.show {
+		display: flex; /* Zeige das Menü, wenn die Klasse `.show` hinzugefügt wird */
+	}
+}
+/* TEST Ende */
 
 /* Header Ende */
 
