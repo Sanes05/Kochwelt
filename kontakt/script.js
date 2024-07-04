@@ -36,17 +36,17 @@ function FormValidation() {
 		ErrorFeatures[0].classList.add("error-border");
 		return false;
 	} else if (Email == "") {
-		Error[1].innerHTML = "<p class=error-message >Bitte Gebe Eine Email An</p>";
+		Error[1].innerHTML = "<p class=error-message >Bitte gebe eine Email an</p>";
 		ErrorFeatures[1].classList.add("error-border");
 		return false;
 	} else if (!isValidEmail(Email)) {
 		Error[1].innerHTML =
-			"<p class=error-message >Bitte Gebe Eine Gültiege Email an Email An</p>";
+			"<p class=error-message >Bitte gebe eine gültiege Email an</p>";
 		ErrorFeatures[1].classList.add("error-border");
 		return false;
 	} else if (Message == "") {
 		Error[2].innerHTML =
-			"<p class=error-message >Bitte Füge Noch eine nachricht hinzu</p>";
+			"<p class=error-message >Bitte füge noch eine Nachricht hinzu</p>";
 		ErrorFeatures[2].classList.add("error-border");
 		return false;
 	} else {
