@@ -46,3 +46,32 @@ header {
 }
 
 /* Header Ende */
+
+/* Startseite Anfang */
+.home-headline {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home-headline {
+	font-size: 72px;
+}
+.home-img-container-main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.home-img {
+	border: 0px solid;
+	border-radius: 12px;
+	width: 150px;
+	height: 150px;
+}
+.home-img:hover {
+	border: 2px solid #00bd00;
+	border-radius: 12px;
+}
+
+/* Startseite Ende */
