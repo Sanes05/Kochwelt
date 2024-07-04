@@ -1,0 +1,15 @@
+.burger-menu-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.burger-menu-logo {
+	width: 200px;
+	height: 60px;
+}
+.nav-burger-menu {
+	display: flex;
+	flex-direction: column;
+}
