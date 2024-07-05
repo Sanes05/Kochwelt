@@ -1,0 +1,37 @@
+.rezept-des-tages-main-container {
+	margin-top: 80px;
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.rezept-des-tage-img-container {
+	width: 100%;
+}
+
+.rezept-des-tages-img {
+	height: 200px;
+	width: 100%;
+	border-radius: 12px;
+}
+
+.rezept-des-tages-infos-container {
+	margin-top: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	gap: 16px;
+}
+
+.rezept-des-tages-infos-icons {
+	width: 16px;
+	height: 16px;
+}
+.rezept-des-tages-inofs {
+	padding: 5px 5px 5px 5px;
+	border-radius: 8px;
+	background-color: rgba(0, 0, 0, 0.03);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}

@@ -1,3 +1,5 @@
+// Burger Menu logik
+
 document.addEventListener("DOMContentLoaded", function () {
 	const burgerMenuIcon = document.getElementById("burger-menu-icon");
 	const burgerMenu = document.getElementById("burger-menu");
