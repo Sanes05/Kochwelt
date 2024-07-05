@@ -32,11 +32,12 @@ function FormValidation() {
 
 	if (Name == "") {
 		Error[0].innerHTML =
-			"<p class=error-message >Bitte gebe einen Namen ein</p>";
+			"<p class=error-message >Bitte gebe deinen Namen ein</p>";
 		ErrorFeatures[0].classList.add("error-border");
 		return false;
 	} else if (Email == "") {
-		Error[1].innerHTML = "<p class=error-message >Bitte gebe eine Email an</p>";
+		Error[1].innerHTML =
+			"<p class=error-message >Bitte gebe deine Email ein</p>";
 		ErrorFeatures[1].classList.add("error-border");
 		return false;
 	} else if (!isValidEmail(Email)) {
