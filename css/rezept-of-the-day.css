@@ -2,6 +2,8 @@
 	margin-top: 80px;
 	margin-left: 160px;
 	margin-right: 160px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+	padding-bottom: 56px;
 }
 
 .rezept-des-tage-img-container {
@@ -19,7 +21,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: start;
-	gap: 16px;
+	gap: 24px;
 }
 
 .rezept-des-tages-infos-icons {
