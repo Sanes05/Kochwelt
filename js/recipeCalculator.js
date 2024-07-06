@@ -28,5 +28,3 @@ function CalculatePortions() {
 		Ingredient[5].innerText = `${(1 / 4) * portionen}`.replace(".", ",");
 	}
 }
-
-//firstIngredient.innerText.replace("400", (400 / 4) * portionen);
