@@ -37,3 +37,53 @@
 	justify-content: center;
 	gap: 8px;
 }
+.rezept-des-tages-zutaten-container-main {
+	margin-top: 16px;
+}
+.rezept-des-tages-input {
+	padding: 8px 8px 8px 8px;
+	border: 1px solid rgba(0, 0, 0, 0.03);
+	border-start-start-radius: 8px;
+	border-bottom-left-radius: 8px;
+	padding-inline: 4px;
+}
+.rezept-des-tages-input:focus {
+	outline: none;
+}
+.rezept-des-tages-submit-button {
+	border: 1px solid;
+	background-color: green;
+	padding: 8px 32px 8px 32px;
+	margin-left: -4px;
+	color: rgba(255, 255, 255, 0.904);
+}
+
+.rezept-des-tages-zutaten-container {
+	display: flex;
+	flex-direction: column;
+	margin-top: 16px;
+	margin-bottom: 24px;
+}
+.rezept-des-tages-span {
+	width: 100%;
+	padding: 20px 20px 20px 20px;
+	border-radius: 12px;
+	font-size: 16px;
+	font-family: "Raleway";
+	font-weight: 500;
+}
+.rezept-des-tages-span-grey {
+	background-color: rgba(0, 0, 0, 0.03);
+}
+
+.error-message {
+	color: red;
+	font-size: 16px;
+	/* display: flex;
+	justify-content: center; */
+	text-align: start;
+	padding-left: 16px;
+}
+.error-border {
+	border-color: red;
+}

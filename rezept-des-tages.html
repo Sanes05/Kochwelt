@@ -80,7 +80,7 @@
 						alt="Uhr Icon"
 						class="rezept-des-tages-infos-icons"
 					/>
-					20 Min.
+					25 Min.
 				</span>
 				<span class="rezept-des-tages-inofs"
 					><img
@@ -99,7 +99,53 @@
 					05.07.2024
 				</span>
 			</div>
+			<div class="rezept-des-tages-zutaten-container-main">
+				<div class="rezept-des-tages-zutaten-input">
+					<div class="rezept-des-tages-form">
+						<label for="zutaten" class="rezept-des-tages-label">
+							Zutaten für
+						</label>
+						<input
+							class="rezept-des-tages-input"
+							type="number"
+							name="zutaten"
+							id="zutaten"
+							value="4"
+							max="20"
+						/>
+						<button
+							onclick="CalculatePortions() "
+							class="rezept-des-tages-submit-button"
+						>
+							Portionen
+						</button>
+					</div>
+					<div class="error-message" id="error-message"></div>
+				</div>
+				<div class="rezept-des-tages-zutaten-container">
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span id="firtst-ingredient">400 </span> g Spaghetti
+					</span>
+					<span class="rezept-des-tages-span">Salz und Pfeffer</span>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey"
+						><span id="second-ingredient">100</span> g Speck
+					</span>
+					<span class="rezept-des-tages-span">
+						<span id="third-ingredient">3</span> mittel große Eier</span
+					>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey"
+						><span id="fourth-ingredient">200</span> g Schlagsahne</span
+					>
+					<span class="rezept-des-tages-span"
+						><span id="fifth-ingredient">50</span> g Parmesan</span
+					>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span id="sixth-ingredient">1</span> EL Olivenöl
+					</span>
+				</div>
+			</div>
 		</div>
 		<script src="./js/app.js"></script>
+		<script src="./js/recipeCalculator.js"></script>
 	</body>
 </html>
