@@ -45,7 +45,8 @@
 	border: 1px solid rgba(0, 0, 0, 0.03);
 	border-start-start-radius: 8px;
 	border-bottom-left-radius: 8px;
-	padding-inline: 4px;
+	width: 160px;
+	padding-inline: 8px;
 }
 .rezept-des-tages-input:focus {
 	outline: none;
@@ -56,6 +57,10 @@
 	padding: 8px 32px 8px 32px;
 	margin-left: -4px;
 	color: rgba(255, 255, 255, 0.904);
+	cursor: pointer;
+}
+.rezept-des-tages-submit-button:hover {
+	background-color: rgb(127, 211, 0);
 }
 
 .rezept-des-tages-zutaten-container {
