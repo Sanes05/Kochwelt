@@ -24,8 +24,8 @@ function CalculatePortions() {
 		Ingredient[1].innerText = `${(100 / 4) * portionen}`;
 		Ingredient[2].innerText = `${(3 / 4) * portionen}`.replace(".", ",");
 		Ingredient[3].innerText = `${(200 / 4) * portionen}`;
-		Ingredient[4].innerText = `${(50 / 4) * portionen}`;
-		Ingredient[5].innerText = `${(1 / 4) * portionen}`;
+		Ingredient[4].innerText = `${(50 / 4) * portionen}`.replace(".", ",");
+		Ingredient[5].innerText = `${(1 / 4) * portionen}`.replace(".", ",");
 	}
 }
 
