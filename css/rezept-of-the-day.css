@@ -99,4 +99,28 @@
 	display: flex;
 	flex-direction: row;
 	gap: 16px;
+	margin-bottom: 40px;
+}
+
+.rezept-des-tages-zubereitung-info-text {
+	margin-bottom: 40px;
+}
+
+.rezept-des-tages-img-erstellt-von {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+.rezept-des-tages-img-container-erstellt-von {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 40px;
+}
+.rezept-des-tages-name {
+	font-size: 24px;
+	font-weight: 500;
+}
+.rezept-des-tages-zubereitung-section {
+	margin-bottom: 180px;
 }
