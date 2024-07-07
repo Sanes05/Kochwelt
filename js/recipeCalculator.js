@@ -2,6 +2,7 @@ function CalculatePortions() {
 	const portionen = document.getElementById("zutaten").value;
 	const errorBorder = document.getElementById("zutaten");
 	const error = document.getElementById("error-message");
+	const num = 4;
 	let Ingredient = [
 		document.getElementById("firtst-ingredient"),
 		document.getElementById("second-ingredient"),
@@ -20,11 +21,11 @@ function CalculatePortions() {
 	} else {
 		error.innerHTML = "";
 		errorBorder.classList.remove("error-border");
-		Ingredient[0].innerText = `${(400 / 4) * portionen}`;
-		Ingredient[1].innerText = `${(100 / 4) * portionen}`;
-		Ingredient[2].innerText = `${(3 / 4) * portionen}`.replace(".", ",");
-		Ingredient[3].innerText = `${(200 / 4) * portionen}`;
-		Ingredient[4].innerText = `${(50 / 4) * portionen}`.replace(".", ",");
-		Ingredient[5].innerText = `${(1 / 4) * portionen}`.replace(".", ",");
+		Ingredient[0].innerText = `${(400 / num) * portionen}`;
+		Ingredient[1].innerText = `${(100 / num) * portionen}`;
+		Ingredient[2].innerText = `${(3 / num) * portionen}`.replace(".", ",");
+		Ingredient[3].innerText = `${(200 / num) * portionen}`;
+		Ingredient[4].innerText = `${(50 / num) * portionen}`.replace(".", ",");
+		Ingredient[5].innerText = `${(1 / num) * portionen}`.replace(".", ",");
 	}
 }

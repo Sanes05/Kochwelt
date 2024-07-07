@@ -119,3 +119,14 @@ header {
 }
 
 /* Startseite Ende */
+
+/* footer */
+footer {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-img {
+	padding-left: 160px;
+	display: flex;
+	align-items: center;
+}
