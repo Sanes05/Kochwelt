@@ -1,0 +1,12 @@
+.impressum-main-container {
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.impressum-main-container a {
+	text-decoration: none;
+}
+
+.impressum-main-container a:hover {
+	text-decoration: underline;
+}

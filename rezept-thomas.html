@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/burger-menu.css" />
+		<link rel="stylesheet" href="./css/rezept-of-the-day.css" />
+		<link
+			rel="shortcut icon"
+			href="./assets/img/logo_small.png"
+			type="image/x-icon"
+		/>
+		<title>Österreichischer Apfelstrudel</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img
+					class="header-img"
+					onclick="location.href='./index.html'"
+					src="./assets/img/logo.png"
+					alt="Kochwelt-Logo"
+				/>
+			</div>
+			<div class="burger-menu-main-container">
+				<!-- Burger Menü Icon -->
+				<div class="burger-icon" id="burger-menu-icon" onclick="ToggleMenu()">
+					&#9776;
+				</div>
+			</div>
+			<div id="burger-menu" class="burger-menu-main">
+				<!-- Überlagerte NavBar für das Burger-Menü -->
+				<nav class="nav-burger-menu">
+					<a href="./index.html" class="burger-menu-a nav-items-black">Start</a>
+					<a
+						href="./rezept-des-tages.html"
+						class="burger-menu-a nav-items-green"
+						>Rezept des Tages</a
+					>
+					<a href="./kontakt/kontakt.html" class="burger-menu-a nav-items-black"
+						>Kontakt</a
+					>
+					<a href="./impressum.html" class="burger-menu-a nav-items-black"
+						>Impressum</a
+					>
+				</nav>
+			</div>
+			<div class="overlay" id="overlay"></div>
+			<!-- Overlay bei geöffnetem Menü -->
+			<nav class="navbar">
+				<a href="./index.html" class="nav-items nav-items-black">Start</a>
+				<a href="./rezept-des-tages.html" class="nav-items nav-items-green"
+					>Rezept des Tages</a
+				>
+				<a href="./kontakt/kontakt.html" class="nav-items nav-items-black"
+					>Kontakt</a
+				>
+				<a href="./impressum.html" class="nav-items nav-items-black"
+					>Impressum</a
+				>
+			</nav>
+		</header>
+		<div class="rezept-des-tages-main-container">
+			<div class="rezept-des-tages-headline-contanier">
+				<h1 class="rezept-des-tages-headline">Österreichischer Apfelstrudel</h1>
+			</div>
+			<div class="rezept-des-tage-img-container">
+				<img
+					src="./assets/img/apfelstrudel.jpg"
+					alt="Österreichischer Apfelstrudel"
+					class="rezept-des-tages-img"
+				/>
+			</div>
+			<div class="rezept-des-tages-infos-container">
+				<span class="rezept-des-tages-inofs"
+					><img
+						src="./assets/img/icons/clock-regular.svg"
+						alt="Uhr Icon"
+						class="rezept-des-tages-infos-icons"
+					/>
+					70 min.
+				</span>
+				<span class="rezept-des-tages-inofs"
+					><img
+						src="./assets/img/icons/brain-solid.svg"
+						alt=""
+						class="rezept-des-tages-infos-icons"
+					/>
+					simple
+				</span>
+				<span class="rezept-des-tages-inofs"
+					><img
+						src="./assets/img/icons/calendar-alt-regular.svg"
+						alt=""
+						class="rezept-des-tages-infos-icons"
+					/>
+					05.07.2024
+				</span>
+			</div>
+			<div class="rezept-des-tages-zutaten-container-main">
+				<div class="rezept-des-tages-zutaten-input">
+					<div class="rezept-des-tages-form">
+						<label for="zutaten" class="rezept-des-tages-label">
+							Zutaten für
+						</label>
+						<input
+							class="rezept-des-tages-input"
+							type="number"
+							name="zutaten"
+							id="zutaten"
+							value="4"
+							max="20"
+							min="1"
+						/>
+						<button
+							onclick="CalculatePortionsThomas() "
+							class="rezept-des-tages-submit-button"
+						>
+							Portionen
+						</button>
+					</div>
+					<div class="error-message" id="error-message"></div>
+				</div>
+				<h2>Zutaten für den Teig</h2>
+				<div class="rezept-des-tages-zutaten-container">
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="firtst-ingredient"
+							>250
+						</span>
+						g Mehl
+					</span>
+					<span class="rezept-des-tages-span"
+						><span class="rezept-des-tages-value" id="second-ingredient"
+							>1</span
+						>
+						TL Essig
+					</span>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="third-ingredient">1</span>
+						TL Öl</span
+					>
+					<span class="rezept-des-tages-span"
+						><span class="rezept-des-tages-value" id="fourth-ingredient"
+							>1</span
+						>
+						Ei</span
+					>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey"
+						><span class="rezept-des-tages-value" id="fifth-ingredient">1</span>
+						Prise Salz</span
+					>
+
+					<h2>Zutaten für die Füllung</h2>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="sixth-ingredient"
+							>100</span
+						>
+						g Butter für die Brösel
+					</span>
+					<span class="rezept-des-tages-span">
+						<span class="rezept-des-tages-value" id="seventh-ingredient"
+							>80</span
+						>
+						g Brösel
+					</span>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="eighth-ingredient"
+							>50</span
+						>
+						g Nüsse (gerieben)
+					</span>
+					<span class="rezept-des-tages-span">
+						<span class="rezept-des-tages-value" id="ninth-ingredient">4</span>
+						Stk Äpfel (säuerlich)
+					</span>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="tenth-ingredient">50</span>
+						g Butter (zum Beträufeln)
+					</span>
+					<span class="rezept-des-tages-span">
+						<span class="rezept-des-tages-value" id="eleventh-ingredient"
+							>100</span
+						>
+						g Kristallzucker
+					</span>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="twelfth-ingredient"
+							>50</span
+						>
+						g Rosinen
+					</span>
+					<span class="rezept-des-tages-span">
+						<span class="rezept-des-tages-value" id="thirteenth-ingredient"
+							>2</span
+						>
+						TL Zimt (Menge nach Belieben)
+					</span>
+				</div>
+				<section class="rezept-des-tages-zubereitung-section">
+					<div class="rezept-des-tages-headline-container-zubereitung">
+						<h2 class="rezept-des-tages-headline-zubereitung">Zubereitung</h2>
+					</div>
+					<div class="rezept-des-tages-zubereitung-img-container-main">
+						<span class="rezept-des-tages-inofs"
+							><img
+								src="./assets/img/icons/clock-regular.svg"
+								alt="Uhr Icon"
+								class="rezept-des-tages-infos-icons"
+							/>
+							30 min. Vorbereitung
+						</span>
+
+						<span class="rezept-des-tages-inofs"
+							><img
+								src="./assets/img/icons/clock-regular.svg"
+								alt="Uhr Icon"
+								class="rezept-des-tages-infos-icons"
+							/>
+							40 min. Kochzeit
+						</span>
+						<span class="rezept-des-tages-inofs"
+							><img
+								src="./assets/img/icons/clock-regular.svg"
+								alt="Uhr Icon"
+								class="rezept-des-tages-infos-icons"
+							/>
+							70 min. Gesamtzeit
+						</span>
+					</div>
+					<div class="rezept-des-tages-zubereitung-info-text">
+						Für den Teig das Mehl auf ein Nudelbrett sieben, in der Mitte eine
+						Grube machen, mit einem Messer Öl, Essig, Salz, Ei und nach und nach
+						lauwarmes Wasser einrühren. Den Teig mit der Hand so lange rasch
+						kneten oder abschlagen, bis er seidig glatt ist. Dann den Teig auf
+						eine bemehlte Stelle des Nudelbretts legen, dünn mit Öl bestreichen
+						und mit einer vorgewärmten Schüssel bedecken. Mindestens 30 Minuten
+						rasten lassen, dabei die Schüssel zwei- oder dreimal wechseln. Dann
+						ein großes Baumwolltuch oder Küchentuch auf einem Tisch ausbreiten,
+						dünn mit Mehl bestäuben. Den Strudelteig in die Mitte legen, etwas
+						ausrollen und mit Hilfe der Handrücken vorsichtig ausziehen, bis er
+						hauchdünn und durchsichtig ist. Die dickeren Ränder wegschneiden.
+						Für die Fülle die Butter in einer Pfanne zerlassen und die Brösel
+						sowie die geriebenen Nüsse darin hellbraun rösten. Danach die Äpfel
+						schälen, entkernen und dann blättrig schneiden oder hobeln. Des
+						Weiteren die Butter (am besten in der Mikrowelle) zerlassen. Nun den
+						ausgezogenen Strudelteig zu zwei Dritteln mit der
+						Brösel-Nuss-Mischung bestreuen und mit den Apfelstücken belegen.
+						Anschließend Zucker, Zimt und Rosinen über die Apfelstücke streuen.
+						Die Teigränder aufschlagen und das restliche Teigdrittel
+						überschlagen. Mit der zerlassenen Butter beträufeln, den Strudel
+						locker einrollen, auf ein eingefettetes Backblech legen und bei
+						180-200°C für ca. 30-40 Minuten bei Ober- und Unterhitze backen.
+					</div>
+					<div class="rezept-des-tages-headline-container-zubereitung">
+						<h3 class="rezept-des-tages-headline-zubereitung">
+							Rezept erstellt von
+						</h3>
+					</div>
+					<div class="rezept-des-tages-img-container-erstellt-von">
+						<img
+							src="./assets/img/profile.png"
+							alt="Profilbild"
+							class="rezept-des-tages-img-erstellt-von"
+						/>
+						<span class="rezept-des-tages-name">Thomas</span>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-img-container">
+				<img src="./assets/img/logo.png" alt="Logo" class="footer-img" />
+			</div>
+		</footer>
+		<script src="./js/app.js"></script>
+		<script src="./js/recipeCalculator.js"></script>
+	</body>
+</html>
