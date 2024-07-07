@@ -60,7 +60,7 @@
 	cursor: pointer;
 }
 .rezept-des-tages-submit-button:hover {
-	background-color: rgb(127, 211, 0);
+	background-color: rgba(0, 150, 0, 1);
 }
 
 .rezept-des-tages-zutaten-container {
