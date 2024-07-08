@@ -135,6 +135,8 @@
 .rezept-des-tages-main-section {
 	height: 33vh;
 	width: 100%;
+}
+.alling-center {
 	display: flex;
 	align-items: center;
 }
