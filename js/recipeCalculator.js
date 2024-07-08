@@ -3,6 +3,7 @@ function CalculatePortionsKevin() {
 	const errorBorder = document.getElementById("zutaten");
 	const error = document.getElementById("error-message");
 	const num = 4;
+	const menge = [400, 100, 3, 200, 50, 1];
 	let Ingredient = [
 		document.getElementById("firtst-ingredient"),
 		document.getElementById("second-ingredient"),
@@ -21,12 +22,21 @@ function CalculatePortionsKevin() {
 	} else {
 		error.innerHTML = "";
 		errorBorder.classList.remove("error-border");
-		Ingredient[0].innerText = `${(400 / num) * portionen}`;
-		Ingredient[1].innerText = `${(100 / num) * portionen}`;
-		Ingredient[2].innerText = `${(3 / num) * portionen}`.replace(".", ",");
-		Ingredient[3].innerText = `${(200 / num) * portionen}`;
-		Ingredient[4].innerText = `${(50 / num) * portionen}`.replace(".", ",");
-		Ingredient[5].innerText = `${(1 / num) * portionen}`.replace(".", ",");
+		Ingredient[0].innerText = `${(menge[0] / num) * portionen}`;
+		Ingredient[1].innerText = `${(menge[1] / num) * portionen}`;
+		Ingredient[2].innerText = `${(menge[2] / num) * portionen}`.replace(
+			".",
+			","
+		);
+		Ingredient[3].innerText = `${(menge[3] / num) * portionen}`;
+		Ingredient[4].innerText = `${(menge[4] / num) * portionen}`.replace(
+			".",
+			","
+		);
+		Ingredient[5].innerText = `${(menge[5] / num) * portionen}`.replace(
+			".",
+			","
+		);
 	}
 }
 
