@@ -9,8 +9,6 @@ function CalculatePortions(id) {
 		error.innerHTML = "Portionen können nicht Über 20 sein";
 		errorBorder.classList.add("error-border");
 	} else if (id === "Kevin") {
-		error.innerHTML = "";
-		errorBorder.classList.remove("error-border");
 		CalculatePortionsKevin();
 	} else if (id === "Thomas") {
 		CalculatePortionsThomas();
