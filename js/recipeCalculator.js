@@ -8,14 +8,14 @@ function CalculatePortions(id) {
 	} else if (portionen > 20) {
 		error.innerHTML = "Portionen können nicht Über 20 sein";
 		errorBorder.classList.add("error-border");
-	} else if (id === 0) {
+	} else if (id === "Kevin") {
 		error.innerHTML = "";
 		errorBorder.classList.remove("error-border");
 		CalculatePortionsKevin();
-	} else if (id === 1) {
+	} else if (id === "Thomas") {
 		CalculatePortionsThomas();
 	} else {
-		console.log("hund");
+		console.log("Keine id");
 	}
 }
 
