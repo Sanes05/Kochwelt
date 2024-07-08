@@ -129,3 +129,45 @@
 .rezept-des-tages-zubereitung-section {
 	margin-bottom: 80px;
 }
+
+/* Neu */
+
+.rezept-des-tages-main-section {
+	height: 33vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+}
+.rezept-des-tages-img-1 {
+	width: 400px;
+	border-radius: 12px;
+}
+.rezept-des-tages-div-1 {
+	display: flex;
+	flex-direction: row;
+	gap: 24px;
+	padding-left: 160px;
+	padding-right: 160px;
+}
+.rezept-des-tages-div-1-items-headline {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+
+.bg-grey {
+	background-color: rgba(0, 0, 0, 0.03);
+}
+.rezept-des-tages-div-1-items-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.rezept-des-tages-div-2 {
+	margin-left: 160px;
+	margin-right: 160px;
+}
+
+.rezept-des-div-2-headline-containerages-div-2 {
+	display: flex;
+	justify-content: center;
+}

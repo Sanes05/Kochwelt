@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/fonts.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/burger-menu.css" />
+		<link rel="stylesheet" href="./css/rezept-of-the-day.css" />
+		<link rel="shortcut icon" href="./assets/img/logo_small.png" type="image/x-icon" />
+		<title>Spaghetti Carbonara</title>
+	</head>
+	<body>
+		<header>
+			<div class="logo-container">
+				<img
+					class="header-img"
+					onclick="location.href='./index.html'"
+					src="./assets/img/logo.png"
+					alt="Kochwelt-Logo" />
+			</div>
+			<div class="burger-menu-main-container">
+				<!-- Burger Menü Icon -->
+				<div class="burger-icon" id="burger-menu-icon" onclick="ToggleMenu()">&#9776;</div>
+			</div>
+			<div id="burger-menu" class="burger-menu-main">
+				<!-- Überlagerte NavBar für das Burger-Menü -->
+				<nav class="nav-burger-menu">
+					<a href="./index.html" class="burger-menu-a nav-items-black">Start</a>
+					<a href="./rezept-des-tages.html" class="burger-menu-a nav-items-green"
+						>Rezept des Tages</a
+					>
+					<a href="./kontakt/kontakt.html" class="burger-menu-a nav-items-black">Kontakt</a>
+					<a href="./impressum.html" class="burger-menu-a nav-items-black">Impressum</a>
+				</nav>
+			</div>
+			<div class="overlay" id="overlay"></div>
+			<!-- Overlay bei geöffnetem Menü -->
+			<nav class="navbar">
+				<a href="./index.html" class="nav-items nav-items-black">Start</a>
+				<a href="./rezept-des-tages.html" class="nav-items nav-items-green">Rezept des Tages</a>
+				<a href="./kontakt/kontakt.html" class="nav-items nav-items-black">Kontakt</a>
+				<a href="./impressum.html" class="nav-items nav-items-black">Impressum</a>
+			</nav>
+		</header>
+		<div class="rezept-des-tages-main-container">
+			<div class="rezept-des-tages-headline-contanier">
+				<h1 class="rezept-des-tages-headline">Erbsen-Gurken-Röllchen mit Quinoasalat</h1>
+			</div>
+			<div class="rezept-des-tage-img-container">
+				<img
+					src="./assets/img/Quinoasalat.jpg"
+					alt="Spaghetti Carbonara"
+					class="rezept-des-tages-img" />
+			</div>
+			<div class="rezept-des-tages-infos-container">
+				<span class="rezept-des-tages-inofs"
+					><img
+						src="./assets/img/icons/clock-regular.svg"
+						alt="Uhr Icon"
+						class="rezept-des-tages-infos-icons" />
+					50 Min.
+				</span>
+				<span class="rezept-des-tages-inofs"
+					><img
+						src="./assets/img/icons/brain-solid.svg"
+						alt=""
+						class="rezept-des-tages-infos-icons" />
+					simple
+				</span>
+				<span class="rezept-des-tages-inofs"
+					><img
+						src="./assets/img/icons/calendar-alt-regular.svg"
+						alt=""
+						class="rezept-des-tages-infos-icons" />
+					05.07.2024
+				</span>
+			</div>
+			<div class="rezept-des-tages-zutaten-container-main">
+				<div class="rezept-des-tages-zutaten-input">
+					<div class="rezept-des-tages-form">
+						<label for="zutaten" class="rezept-des-tages-label"> Zutaten für </label>
+						<input
+							class="rezept-des-tages-input"
+							type="number"
+							name="zutaten"
+							id="zutaten"
+							value="4"
+							max="20"
+							min="1" />
+						<button onclick="CalculatePortions('Tobias') " class="rezept-des-tages-submit-button">
+							Portionen
+						</button>
+					</div>
+					<div class="error-message" id="error-message"></div>
+				</div>
+				<div class="rezept-des-tages-zutaten-container">
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="firtst-ingredient">150 </span>
+						g TK-Erbsen
+					</span>
+					<span class="rezept-des-tages-span">Salz und Pfeffer</span>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey"
+						><span class="rezept-des-tages-value" id="second-ingredient">50</span>
+						g Quinoa
+					</span>
+					<span class="rezept-des-tages-span">
+						<span class="rezept-des-tages-value" id="third-ingredient">100</span>
+						g Zuckerschoten</span
+					>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey"
+						><span class="rezept-des-tages-value" id="fourth-ingredient">1</span> Salatgurke
+					</span>
+					<span class="rezept-des-tages-span"
+						><span class="rezept-des-tages-value" id="fifth-ingredient">1</span> Knoblauchzehe</span
+					>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey">
+						<span class="rezept-des-tages-value" id="sixth-ingredient">6</span>
+						Stiele Minze
+					</span>
+					<span class="rezept-des-tages-span"
+						><span class="rezept-des-tages-value" id="seventh-ingredient">5</span>EL
+						Zitronensaft</span
+					>
+					<span class="rezept-des-tages-span rezept-des-tages-span-grey"
+						><span class="rezept-des-tages-value" id="eighth-ingredient">3</span>EL Olivenöl</span
+					>
+				</div>
+				<section class="rezept-des-tages-zubereitung-section">
+					<div class="rezept-des-tages-headline-container-zubereitung">
+						<h2 class="rezept-des-tages-headline-zubereitung">Zubereitung</h2>
+					</div>
+					<div class="rezept-des-tages-zubereitung-img-container-main">
+						<span class="rezept-des-tages-inofs"
+							><img
+								src="./assets/img/icons/clock-regular.svg"
+								alt="Uhr Icon"
+								class="rezept-des-tages-infos-icons" />
+							Arbeitszeit ca.50 Minuten
+						</span>
+
+						<span class="rezept-des-tages-inofs"
+							><img
+								src="./assets/img/icons/clock-regular.svg"
+								alt="Uhr Icon"
+								class="rezept-des-tages-infos-icons" />
+							Gesamtzeit ca. 50 Minuten
+						</span>
+					</div>
+					<div class="rezept-des-tages-zubereitung-info-text">
+						1 Erbsen auftauen lassen. Quinoa in 100 ml kochendem Salzwasser zugedeckt bei schwacher
+						Hitze ca. 20 Minuten garen. Inzwischen Zuckerschoten putzen, waschen und in feine
+						Streifen schneiden. Gurke waschen, längs halbieren.<br /><br />
+						2 Der Länge nach 4 schöne Scheiben mit einem Sparschäler abschälen und beiseitelegen.
+						Von übriger Gurke ca. 100 g fein würfeln (Rest Gurke für z. B. Smoothie, s. Seite 90,
+						verwenden). Quinoa abgießen, etwas abkühlen lassen.<br /><br />
+						3 Für die Vinaigrette Knoblauch schälen und sehr fein hacken. Minze waschen, trocken
+						schütteln und die Blättchen hacken. 1⁄3 Minze mit 4 EL Zitronensaft, Knoblauch, etwas
+						Salz und Pfeffer verrühren. Öl darunterschlagen.<br /><br />
+						4 Vinaigrette mit Quinoa, Zuckerschoten und Gurkenwürfeln mischen. 5 Erbsen und Rest
+						Minze mit einem Stabmixer fein pürieren. Mit Salz, Pfeffer und ca. 1 EL Zitronensaft
+						abschmecken. Die 4 Gurkenscheiben mit Erbsenpüree bestreichen und aufrollen.
+						Gurkenröllchen mit Quinoasalat anrichten.
+					</div>
+					<div class="rezept-des-tages-headline-container-zubereitung">
+						<h3 class="rezept-des-tages-headline-zubereitung">Rezept erstellt von</h3>
+					</div>
+					<div class="rezept-des-tages-img-container-erstellt-von">
+						<img
+							src="./assets/img/profile.png"
+							alt="Profilbild"
+							class="rezept-des-tages-img-erstellt-von" />
+						<span class="rezept-des-tages-name">Tobias</span>
+					</div>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-img-container">
+				<img src="./assets/img/logo.png" alt="Logo" class="footer-img" />
+			</div>
+		</footer>
+		<script src="./js/app.js"></script>
+		<script src="./js/recipeCalculator.js"></script>
+	</body>
+</html>

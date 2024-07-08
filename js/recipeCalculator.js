@@ -12,8 +12,10 @@ function CalculatePortions(id) {
 		CalculatePortionsKevin();
 	} else if (id === "Thomas") {
 		CalculatePortionsThomas();
+	} else if (id === "Tobias") {
+		CalculatePortionsTobias();
 	} else {
-		console.log("Keine id");
+		console.error("Keine ID");
 	}
 }
 
@@ -77,12 +79,35 @@ function CalculatePortionsThomas() {
 	Ingredient[8].innerText = `${(menge[5] / num) * portionen}`;
 	Ingredient[9].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
 	Ingredient[10].innerText = `${(menge[2] / num) * portionen}`;
-	Ingredient[11].innerText = `${(menge[4] / num) * portionen}`.replace(
-		".",
-		","
-	);
-	Ingredient[12].innerText = `${(menge[6] / num) * portionen}`.replace(
-		".",
-		","
-	);
+	Ingredient[11].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
+	Ingredient[12].innerText = `${(menge[6] / num) * portionen}`.replace(".", ",");
+}
+
+function CalculatePortionsTobias() {
+	const errorBorder = document.getElementById("zutaten");
+	const error = document.getElementById("error-message");
+	const portionen = document.getElementById("zutaten").value;
+	const num = 4;
+	const menge = [150, 50, 100, 1, 6, 5, 3];
+	let Ingredient = [
+		document.getElementById("firtst-ingredient"),
+		document.getElementById("second-ingredient"),
+		document.getElementById("third-ingredient"),
+		document.getElementById("fourth-ingredient"),
+		document.getElementById("fifth-ingredient"),
+		document.getElementById("sixth-ingredient"),
+		document.getElementById("seventh-ingredient"),
+		document.getElementById("eighth-ingredient"),
+	];
+
+	error.innerHTML = "";
+	errorBorder.classList.remove("error-border");
+	Ingredient[0].innerText = `${(menge[0] / num) * portionen}`.replace(".", ",");
+	Ingredient[1].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
+	Ingredient[2].innerText = `${(menge[2] / num) * portionen}`.replace(".", ",");
+	Ingredient[3].innerText = `${(menge[3] / num) * portionen}`.replace(".", ",");
+	Ingredient[4].innerText = `${(menge[3] / num) * portionen}`.replace(".", ",");
+	Ingredient[5].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
+	Ingredient[6].innerText = `${(menge[5] / num) * portionen}`.replace(".", ",");
+	Ingredient[7].innerText = `${(menge[6] / num) * portionen}`.replace(".", ",");
 }
