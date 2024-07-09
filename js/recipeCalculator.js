@@ -3,11 +3,9 @@ function CalculatePortions(id) {
 	const error = document.getElementById("error-message");
 	const portionen = document.getElementById("zutaten").value;
 	if (portionen <= 0) {
-		error.innerHTML = "Portionen können nicht Null oder wenieger sein";
-		errorBorder.classList.add("error-border");
+		ShowError("Portionen können nicht Null oder wenieger Sein", error, errorBorder);
 	} else if (portionen > 20) {
-		error.innerHTML = "Portionen können nicht Über 20 sein";
-		errorBorder.classList.add("error-border");
+		ShowError("Portionen können nicht über 20 sein", error, errorBorder);
 	} else if (id === "Kevin") {
 		CalculateIngredients("Kevin", (menge = [400, 100, 3, 200, 50, 1]));
 	} else if (id === "Thomas") {
@@ -23,8 +21,7 @@ function CalculateIngredients(id, menge = []) {
 	const errorBorder = document.getElementById("zutaten");
 	const error = document.getElementById("error-message");
 	const num = 4;
-	error.innerHTML = "";
-	errorBorder.classList.remove("error-border");
+	HideError(error, errorBorder);
 	let Ingredient = [
 		document.getElementById("firtst-ingredient"),
 		document.getElementById("second-ingredient"),
@@ -74,4 +71,14 @@ function CalculateIngredients(id, menge = []) {
 	} else {
 		console.error("Falsche oder Keine id");
 	}
+}
+
+function ShowError(message, error, errorBorder) {
+	error.innerText = message;
+	errorBorder.classList.add("error-border");
+}
+
+function HideError(error, errorBorder) {
+	error.innerText = "";
+	errorBorder.classList.remove("error-border");
 }
