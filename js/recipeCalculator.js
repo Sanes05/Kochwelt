@@ -3,7 +3,7 @@ function CalculatePortions(id) {
 	const error = document.getElementById("error-message");
 	const portionen = document.getElementById("zutaten").value;
 	if (portionen <= 0) {
-		ShowError("Portionen können nicht Null oder wenieger Sein", error, errorBorder);
+		ShowError("Portionen können nicht Null oder weniger Sein", error, errorBorder);
 	} else if (portionen > 20) {
 		ShowError("Portionen können nicht über 20 sein", error, errorBorder);
 	} else if (id === "Kevin") {
