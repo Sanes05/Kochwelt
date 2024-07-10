@@ -9,9 +9,9 @@ function CalculatePortions(id) {
 	} else if (id === "Kevin") {
 		CalculateIngredients("Kevin", (menge = [400, 100, 3, 200, 50, 1]));
 	} else if (id === "Thomas") {
-		CalculateIngredients("Thomas", (menge = [250, 1, 100, 80, 50, 4, 2]));
+		CalculateIngredients("Thomas", (menge = [250, 1, 1, 1, 1, 100, 80, 50, 4, 50, 100, 50, 2]));
 	} else if (id === "Tobias") {
-		CalculateIngredients("Tobias", (menge = [150, 50, 100, 1, 6, 5, 3]));
+		CalculateIngredients("Tobias", (menge = [150, 50, 100, 1, 1, 6, 5, 3]));
 	} else {
 		console.error("Keine ID");
 	}
@@ -39,35 +39,26 @@ function CalculateIngredients(id, menge = []) {
 	];
 
 	if (id === "Kevin") {
-		Ingredient[0].innerText = `${(menge[0] / num) * portionen}`.replace(".", ",");
-		Ingredient[1].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
-		Ingredient[2].innerText = `${(menge[2] / num) * portionen}`.replace(".", ",");
-		Ingredient[3].innerText = `${(menge[3] / num) * portionen}`.replace(".", ",");
-		Ingredient[4].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
-		Ingredient[5].innerText = `${(menge[5] / num) * portionen}`.replace(".", ",");
+		const Menge = menge;
+		for (let index = 0; index < Ingredient.length; index++) {
+			if (index < Menge.length) {
+				Ingredient[index].innerText = `${(Menge[index] / num) * portionen}`.replace(".", ",");
+			}
+		}
 	} else if (id === "Thomas") {
-		Ingredient[0].innerText = `${(menge[0] / num) * portionen}`.replace(".", ",");
-		Ingredient[1].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
-		Ingredient[2].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
-		Ingredient[3].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
-		Ingredient[4].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
-		Ingredient[5].innerText = `${(menge[2] / num) * portionen}`.replace(".", ",");
-		Ingredient[6].innerText = `${(menge[3] / num) * portionen}`.replace(".", ",");
-		Ingredient[7].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
-		Ingredient[8].innerText = `${(menge[5] / num) * portionen}`.replace(".", ",");
-		Ingredient[9].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
-		Ingredient[10].innerText = `${(menge[2] / num) * portionen}`.replace(".", ",");
-		Ingredient[11].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
-		Ingredient[12].innerText = `${(menge[6] / num) * portionen}`.replace(".", ",");
+		const Menge = menge;
+		for (let index = 0; index < Ingredient.length; index++) {
+			if (index < Menge.length) {
+				Ingredient[index].innerText = `${(Menge[index] / num) * portionen}`.replace(".", ",");
+			}
+		}
 	} else if (id === "Tobias") {
-		Ingredient[0].innerText = `${(menge[0] / num) * portionen}`.replace(".", ",");
-		Ingredient[1].innerText = `${(menge[1] / num) * portionen}`.replace(".", ",");
-		Ingredient[2].innerText = `${(menge[2] / num) * portionen}`.replace(".", ",");
-		Ingredient[3].innerText = `${(menge[3] / num) * portionen}`.replace(".", ",");
-		Ingredient[4].innerText = `${(menge[3] / num) * portionen}`.replace(".", ",");
-		Ingredient[5].innerText = `${(menge[4] / num) * portionen}`.replace(".", ",");
-		Ingredient[6].innerText = `${(menge[5] / num) * portionen}`.replace(".", ",");
-		Ingredient[7].innerText = `${(menge[6] / num) * portionen}`.replace(".", ",");
+		const Menge = menge;
+		for (let index = 0; index < Ingredient.length; index++) {
+			if (index < Menge.length) {
+				Ingredient[index].innerText = `${(Menge[index] / num) * portionen}`.replace(".", ",");
+			}
+		}
 	} else {
 		console.error("Falsche oder Keine id");
 	}
