@@ -91,9 +91,12 @@ header {
 footer {
 	background-color: rgba(0, 0, 0, 0.5);
 	margin-top: auto;
+	width: 100%;
+}
+
+.positon-absolut {
 	position: absolute;
 	bottom: 0;
-	width: 100%;
 }
 
 .footer-img {
