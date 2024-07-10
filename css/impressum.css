@@ -11,3 +11,13 @@
 .impressum-main-container a:hover {
 	text-decoration: underline;
 }
+
+/* Responsive */
+
+@media (max-width: 600px) {
+	.impressum-main-container {
+		margin-left: 16px;
+		margin-right: 16px;
+		margin-bottom: 24px;
+	}
+}
