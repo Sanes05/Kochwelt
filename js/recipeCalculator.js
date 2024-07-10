@@ -16,6 +16,7 @@ function CalculatePortions(id) {
 		console.error("Keine ID");
 	}
 }
+
 function CalculateIngredients(id, menge = []) {
 	const portionen = document.getElementById("zutaten").value;
 	const errorBorder = document.getElementById("zutaten");
