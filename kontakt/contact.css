@@ -53,13 +53,13 @@
 .submit-btn {
 	font-size: 24px;
 	padding: 5px 5px 5px 5px;
-	background-color: #00bd00;
+	background-color: green;
 	border: 0px solid;
 	border-radius: 8px;
 }
 
 .submit-btn:hover {
-	background-color: #00d300;
+	background-color: rgba(0, 150, 0, 1);
 }
 label {
 	display: flex;
