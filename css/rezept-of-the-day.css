@@ -189,3 +189,29 @@
 	flex-direction: column;
 	gap: 40px;
 }
+
+.kevin {
+	background-image: url(../assets/img/pasta-712664_1280.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 100%;
+	border-radius: 12px;
+}
+
+.thomas {
+	background-image: url(../assets/img/apfelstrudel.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 100%;
+	border-radius: 12px;
+}
+.tobias {
+	background-image: url(../assets/img/Quinoasalat.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 200px;
+	width: 100%;
+	border-radius: 12px;
+}
