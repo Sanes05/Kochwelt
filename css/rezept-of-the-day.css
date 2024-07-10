@@ -215,3 +215,28 @@
 	width: 100%;
 	border-radius: 12px;
 }
+
+/* Responisve */
+@media (max-width: 750px) {
+	.rezept-des-tages-main-container {
+		margin-left: 80px;
+		margin-right: 80px;
+	}
+}
+
+@media (max-width: 570px) {
+	.rezept-des-tages-main-container {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}
+@media (max-width: 465px) {
+	.rezept-des-tages-infos-container {
+		display: flex;
+		flex-direction: column;
+	}
+	.rezept-des-tages-main-container {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}
