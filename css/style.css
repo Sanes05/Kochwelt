@@ -80,8 +80,12 @@ header {
 }
 
 @media (max-width: 600px) {
+	.header-img {
+		width: 200px;
+		height: 60px;
+	}
 	.logo-container {
-		display: none;
+		margin-left: 16px;
 	}
 }
 
