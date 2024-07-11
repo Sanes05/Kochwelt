@@ -1,5 +1,6 @@
 .contac-form-container {
 	display: flex;
+	height: 80dvh;
 	margin-top: 48px;
 	flex-direction: column;
 	align-items: center;
