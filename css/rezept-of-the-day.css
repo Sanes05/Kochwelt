@@ -226,10 +226,27 @@
 	}
 }
 
-@media (max-width: 570px) {
+@media (max-width: 575px) {
 	.rezept-des-tages-main-container {
 		margin-left: 30px;
 		margin-right: 30px;
+	}
+	.rezept-des-tages-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+	}
+	.rezept-des-tages-input {
+		border: 1px solid rgba(0, 0, 0, 0.03);
+		border-radius: 4px;
+	}
+	.rezept-des-tages-zutaten-container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }
 @media (max-width: 465px) {
