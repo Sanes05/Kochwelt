@@ -49,58 +49,6 @@ header {
 .burger-icon {
 	display: none;
 }
-
-/* Header Ende */
-
-/* Startseite Anfang */
-
-.home-section-first {
-	margin-top: 24px;
-}
-.home-headline-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-
-.home-headline {
-	font-size: 72px;
-	margin-block-start: 0;
-	margin-block-end: 0;
-}
-.home-img-container-main {
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-.home-img {
-	border: 0px solid;
-	border-radius: 12px;
-	width: 150px;
-	height: 150px;
-}
-.home-img:hover {
-	border: 2px solid #00bd00;
-	border-radius: 12px;
-}
-
-/* Startseite Ende */
-
-/* footer */
-footer {
-	background-color: rgba(0, 0, 0, 0.5);
-	margin-top: 120px;
-	width: 100%;
-}
-
-.footer-img {
-	padding-left: 160px;
-	display: flex;
-	align-items: center;
-}
-
-/* responsive desing */
 @media (max-width: 1235px) {
 	.logo-container {
 		margin-left: 60px;
@@ -132,18 +80,150 @@ footer {
 }
 
 @media (max-width: 600px) {
-	.header-img {
-		width: 200px;
-		height: 60px;
-	}
 	.logo-container {
-		margin-left: 16px;
+		display: none;
 	}
-	.footer-img {
-		width: 200px;
-		height: 60px;
-		padding-left: 16px;
-		display: flex;
-		align-items: center;
-	}
+}
+
+/* Header Ende */
+
+/* Startseite Anfang */
+
+.home-section-first {
+	margin-top: 24px;
+	position: absolute;
+}
+.home-headline-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.home-headline {
+	font-size: clamp(2rem, 1.286rem + 3.571vw, 4.5rem); /*das hab ich geändert wegen responsiveness*/
+	text-align: center;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-top: 24px;
+}
+.home-img-container-main {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.home-img {
+	border: 0px solid;
+	border-radius: 12px;
+	width: 150px;
+	height: 150px;
+}
+.home-img:hover {
+	border: 2px solid #00bd00;
+	border-radius: 12px;
+}
+
+/* Startseite Ende */
+
+/* footer */
+footer {
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: auto;
+}
+
+.footer-img {
+	padding-left: 160px;
+	display: flex;
+	align-items: center;
+}
+
+/*Code Thomas */
+
+:root {
+	--borders: clamp(0.625rem, -2.054rem + 13.393vw, 10rem);
+}
+
+.background {
+	margin-left: var(--borders);
+	margin-right: var(--borders);
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.background img {
+	margin-top: 24px;
+	width: clamp(6.25rem, 0.357rem + 29.464vw, 26.875rem);
+	height: clamp(18.75rem, 8.036rem + 53.571vw, 56.25rem);
+	object-fit: cover;
+}
+
+.hoverstate:hover {
+	cursor: pointer;
+}
+
+.hoverstate {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	border-radius: 10px;
+	width: clamp(6.25rem, 0.357rem + 29.464vw, 26.875rem); /* Ursprüngliche Größe */
+	height: clamp(18.75rem, 8.036rem + 53.571vw, 56.25rem); /* Ursprüngliche Größe */
+}
+
+.hoverstate img {
+	width: 100%;
+	height: 100%;
+	transition: transform 0.5s ease-in-out, filter 0.5s ease-in-out;
+}
+
+.hover-text {
+	font-size: clamp(0.5rem, 0.286rem + 1.071vw, 1.25rem);
+	font-style: italic;
+	font-weight: 200;
+	line-height: clamp(0.625rem, 0.357rem + 1.339vw, 1.563rem);
+}
+
+.hoverstate .hover-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	text-align: center;
+	z-index: 2;
+}
+
+.hoverstate:hover img {
+	transform: scale(1.2); /* Bild vergrößern */
+	filter: blur(5px); /* Blur Effect */
+}
+
+.hoverstate:hover::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: calc(clamp(6.25rem, 0.357rem + 29.464vw, 26.875rem) * 0.8); /* Innerer Kreis Größe */
+	height: calc(clamp(18.75rem, 8.036rem + 53.571vw, 56.25rem) * 0.8); /* Innerer Kreis Größe */
+	background: rgba(0, 0, 0, 0.5);
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.hoverstate:hover .hover-text {
+	z-index: 2;
+	opacity: 1; /* Text wieder anzeigen */
+}
+
+.hoverstate:hover .hover-icon {
+	z-index: 2;
+	opacity: 1; /* Bild wieder anzeigen */
+}
+
+.hoverstate:hover .hover-icon {
+	transform: scale(0.5);
+	filter: blur(0px);
 }
