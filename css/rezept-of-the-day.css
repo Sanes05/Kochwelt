@@ -176,18 +176,20 @@
 .rezept-des-tages-div-2-img-container-main {
 	display: flex;
 	justify-content: space-between;
+	height: 50%;
+	align-items: center;
 	margin-left: 160px;
 	margin-right: 160px;
+	margin-top: 24px;
 }
 
 .rezept-des-tages-div-2-img {
-	width: 100px;
-	height: 100px;
+	width: 200px;
+	height: 200px;
+	border-radius: 12px;
 }
-.test {
-	display: flex;
-	flex-direction: column;
-	gap: 40px;
+.rezept-des-tages-div-2-img:hover {
+	border: 2px solid green;
 }
 
 .kevin {
