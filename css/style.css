@@ -188,6 +188,7 @@ footer {
 }
 
 .hover-text {
+	padding-bottom: 8px;
 	font-size: clamp(0.5rem, 0.286rem + 1.071vw, 1.25rem);
 	font-style: italic;
 	font-weight: 200;
