@@ -254,17 +254,12 @@
 	.rezept-des-tages-div-2-img-container-main {
 		margin-left: 80px;
 		margin-right: 80px;
-		/* display: flex;
-		flex-direction: column;
-		justify-content: start;
-		align-items: center;
-		gap: 16px; */
 	}
 	.responsive-section-two {
 		height: 60dvh;
 	}
 	.responsive-section-one {
-		margin-top: 16px;
+		margin-top: 80px;
 		height: 60dvh;
 		display: flex;
 		flex-direction: column;
@@ -287,6 +282,8 @@
 		justify-content: center;
 		align-items: center;
 		flex-direction: column-reverse;
+		margin-left: 80px;
+		margin-right: 80px;
 	}
 	.responsive-section-tree {
 		height: 60dvh;
