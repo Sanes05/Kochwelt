@@ -219,10 +219,37 @@
 }
 
 /* Responisve */
-@media (max-width: 750px) {
-	.rezept-des-tages-main-container {
+@media (max-width: 1000px) {
+	.rezept-des-tages-div-2-img-container-main {
 		margin-left: 80px;
 		margin-right: 80px;
+		/* display: flex;
+		flex-direction: column;
+		justify-content: start;
+		align-items: center;
+		gap: 16px; */
+	}
+	.responsive-section-two {
+		height: 60dvh;
+	}
+}
+@media (max-width: 800px) {
+	.rezept-des-tages-div-2-img-container-main {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.rezept-des-tages-main-container {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+@media (max-width: 750px) {
+	.rezept-des-tages-div-2-img-container-main {
+		display: flex;
+		justify-content: start;
+		align-items: center;
+		flex-direction: column;
+		gap: 24px;
 	}
 }
 
