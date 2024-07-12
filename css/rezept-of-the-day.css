@@ -7,7 +7,9 @@
 .rezept-des-tage-img-container {
 	width: 100%;
 }
-
+.rezept-des-tages-div-1-btn-container {
+	margin-top: -50px;
+}
 .rezept-des-tages-img {
 	height: 200px;
 	width: 100%;
@@ -265,6 +267,10 @@
 		height: 60dvh;
 		display: flex;
 		flex-direction: column;
+	}
+	.rezept-des-tages-div-1-btn-container {
+		display: flex;
+		justify-content: center;
 	}
 	.rezept-des-tages-div-1 {
 		display: flex;
