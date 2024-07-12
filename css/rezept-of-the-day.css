@@ -258,6 +258,7 @@
 	}
 	.responsive-section-two {
 		height: 60dvh;
+		margin-bottom: 180px;
 	}
 	.responsive-section-one {
 		margin-top: 80px;
@@ -288,6 +289,7 @@
 	}
 	.responsive-section-tree {
 		height: 60dvh;
+		margin-bottom: 120px;
 	}
 	.rezept-des-tages-div-3-text-item {
 		text-align: center;
@@ -344,6 +346,9 @@
 	}
 }
 @media (max-width: 465px) {
+	.rezept-des-tages-div-1-btn {
+		margin-top: 0;
+	}
 	.rezept-des-tages-img-1 {
 		width: 300px;
 	}
