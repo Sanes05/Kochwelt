@@ -163,6 +163,18 @@
 	display: flex;
 	flex-direction: column;
 }
+.rezept-des-tages-div-1-btn {
+	padding: 8px 40px 8px 40px;
+	display: flex;
+	margin-top: 80px;
+	background-color: green;
+	color: white;
+	border: 1px solid rgba(0, 0, 0, 0.03);
+	cursor: pointer;
+}
+.rezept-des-tages-div-1-btn:hover {
+	background-color: rgba(0, 150, 0, 1);
+}
 
 .rezept-des-tages-div-2 {
 	margin-left: 160px;
@@ -217,7 +229,26 @@
 	width: 100%;
 	border-radius: 12px;
 }
+.rezept-des-tages-div-3-headline-container {
+	display: flex;
+	justify-content: center;
+}
 
+.rezept-des-tages-div-3-text-container {
+	margin-left: 160px;
+	margin-right: 160px;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+}
+.rezept-des-tages-div-3-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 12px;
+}
+.rezept-des-tages-div-3-text-item {
+	text-align: end;
+}
 /* Responisve */
 @media (max-width: 1000px) {
 	.rezept-des-tages-div-2-img-container-main {
