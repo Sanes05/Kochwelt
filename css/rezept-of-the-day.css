@@ -353,7 +353,7 @@
 }
 @media (max-width: 465px) {
 	.rezept-des-tages-div-1-btn {
-		margin-top: 0;
+		margin-top: 40px;
 	}
 	.rezept-des-tages-img-1 {
 		width: 300px;
