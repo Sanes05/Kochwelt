@@ -253,7 +253,7 @@
 	text-align: end;
 }
 /* Responisve */
-@media (max-width: 1000px) {
+@media (max-width: 1055px) {
 	.rezept-des-tages-div-2-img-container-main {
 		margin-left: 80px;
 		margin-right: 80px;
