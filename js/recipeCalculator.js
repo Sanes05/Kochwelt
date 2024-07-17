@@ -15,6 +15,7 @@ let Ingredient = [
 	document.getElementById("twelfth-ingredient"),
 	document.getElementById("thirteenth-ingredient"),
 ];
+
 function CalculatePortions(id) {
 	const portionen = document.getElementById("zutaten").value;
 	if (portionen <= 0) {
