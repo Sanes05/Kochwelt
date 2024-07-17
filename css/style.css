@@ -4,6 +4,7 @@ body {
 	font-family: "Raleway";
 	display: flex;
 	flex-direction: column;
+	min-height: 100dvh;
 }
 
 /* Header Anfang */
@@ -53,7 +54,9 @@ header {
 /* Header Ende */
 
 /* Startseite Anfang */
-
+.home-main-container {
+	margin-bottom: 24px;
+}
 .home-section-first {
 	margin-top: 24px;
 }
@@ -91,7 +94,7 @@ header {
 /* footer */
 footer {
 	background-color: rgba(0, 0, 0, 0.5);
-	margin-top: 60px;
+	margin-top: auto;
 	width: 100%;
 	margin-bottom: 0;
 	display: flex;
