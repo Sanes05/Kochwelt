@@ -55,6 +55,9 @@ header {
 
 /* Startseite Anfang */
 .home-main-container {
+	margin-top: 24px;
+	display: flex;
+	justify-content: center;
 	margin-bottom: 24px;
 }
 .home-section-first {
@@ -98,6 +101,8 @@ footer {
 	width: 100%;
 	margin-bottom: 0;
 	display: flex;
+	display: flex;
+	justify-content: center;
 }
 
 .footer-img {
@@ -241,4 +246,9 @@ footer {
 .hoverstate:hover .hover-icon {
 	transform: scale(0.5);
 	filter: blur(0px);
+}
+
+.test {
+	width: 1920px;
+	background-color: red;
 }
