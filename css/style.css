@@ -5,12 +5,28 @@ body {
 	display: flex;
 	flex-direction: column;
 	min-height: 100dvh;
+	overflow-x: hidden;
 }
-
+.test {
+	max-width: 1920px;
+	width: 100%;
+	/* background-color: red; */
+}
+.test1 {
+	max-width: 1920px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.test2 {
+	margin-left: 160px;
+	width: 1920px;
+	/* background: red; */
+}
 /* Header Anfang */
 header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
@@ -106,7 +122,7 @@ footer {
 }
 
 .footer-img {
-	padding-left: 160px;
+	margin-left: 160px;
 	display: flex;
 	align-items: center;
 }
@@ -246,9 +262,4 @@ footer {
 .hoverstate:hover .hover-icon {
 	transform: scale(0.5);
 	filter: blur(0px);
-}
-
-.test {
-	width: 1920px;
-	background-color: red;
 }
