@@ -20,6 +20,9 @@ body {
 }
 .test2 {
 	width: 1920px;
+	display: flex;
+	justify-content: start;
+	margin-left: 8px;
 	/* background: red; */
 }
 /* Header Anfang */
@@ -121,9 +124,13 @@ footer {
 }
 
 .footer-img {
-	margin-left: 160px;
 	display: flex;
 	align-items: center;
+}
+
+.footer-img-container {
+	display: flex;
+	justify-content: start;
 }
 
 /* responsive desing */
