@@ -13,6 +13,7 @@ body {
 	/* background-color: red; */
 }
 .test1 {
+	margin-left: 160px;
 	max-width: 1920px;
 	width: 100%;
 	display: flex;
@@ -33,7 +34,6 @@ header {
 }
 
 .logo-container {
-	margin-left: 160px;
 	display: flex;
 	align-items: center;
 }
