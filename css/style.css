@@ -24,7 +24,6 @@ body {
 	display: flex;
 	justify-content: start;
 	margin-left: 160px;
-	/* background: red; */
 }
 /* Header Anfang */
 header {
@@ -135,8 +134,21 @@ footer {
 
 /* responsive desing */
 @media (max-width: 1235px) {
-	.logo-container {
+	.test1 {
 		margin-left: 60px;
+		max-width: 1920px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.test2 {
+		width: 1920px;
+		display: flex;
+		justify-content: start;
+		margin-left: 60px;
+	}
+	.logo-container {
+		margin-left: 0px;
 		display: flex;
 		align-items: center;
 	}
@@ -165,17 +177,30 @@ footer {
 }
 
 @media (max-width: 600px) {
+	.test1 {
+		margin-left: 16px;
+		max-width: 1920px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.test2 {
+		width: 1920px;
+		display: flex;
+		justify-content: start;
+		margin-left: 16px;
+	}
+	.logo-container {
+		margin-left: 0px;
+	}
 	.header-img {
 		width: 200px;
 		height: 60px;
 	}
-	.logo-container {
-		margin-left: 16px;
-	}
 	.footer-img {
 		width: 200px;
 		height: 60px;
-		padding-left: 16px;
+		/* padding-left: 16px; */
 		display: flex;
 		align-items: center;
 	}
