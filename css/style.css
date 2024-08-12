@@ -137,14 +137,14 @@ footer {
 
 /* responsive desing */
 @media (max-width: 1235px) {
-	.test1 {
+	.ultrawide-header {
 		margin-left: 60px;
 		max-width: 1920px;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
-	.test2 {
+	.ultrawide-footer {
 		width: 1920px;
 		display: flex;
 		justify-content: start;
@@ -180,14 +180,14 @@ footer {
 }
 
 @media (max-width: 600px) {
-	.test1 {
+	.ultrawide-header {
 		margin-left: 16px;
 		max-width: 1920px;
 		width: 100%;
 		display: flex;
 		justify-content: space-between;
 	}
-	.test2 {
+	.ultrawide-footer {
 		width: 1920px;
 		display: flex;
 		justify-content: start;
