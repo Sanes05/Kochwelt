@@ -2,6 +2,8 @@
 	margin-left: 160px;
 	margin-right: 160px;
 	margin-bottom: 24px;
+	display: flex;
+	justify-content: center;
 }
 
 .impressum-main-container a {

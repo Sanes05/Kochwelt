@@ -7,19 +7,22 @@ body {
 	min-height: 100dvh;
 	overflow-x: hidden;
 }
-.test1 {
+.ultrawide-header {
+	/* former:test1 */
 	margin-left: 160px;
 	max-width: 1920px;
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.test {
+.ultrawide-main {
+	/* former:test  */
 	max-width: 1920px;
-	width: 100%;
+	/* width: 100%; */
 	/* background-color: red; */
 }
-.test2 {
+.ultrawide-footer {
+	/* former:test2  */
 	width: 1920px;
 	display: flex;
 	justify-content: start;
