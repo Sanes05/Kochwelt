@@ -2,6 +2,8 @@
 	margin-top: 80px;
 	margin-left: 160px;
 	margin-right: 160px;
+	display: flex;
+	justify-content: center;
 }
 
 .rezept-des-tage-img-container {
