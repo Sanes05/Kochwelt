@@ -135,6 +135,7 @@
 /* Neu */
 
 .rezept-des-tages-main-section {
+	margin-top: 16px;
 	height: 33vh;
 	width: 100%;
 }
@@ -161,9 +162,11 @@
 .bg-grey {
 	background-color: rgba(0, 0, 0, 0.03);
 }
-.rezept-des-tages-div-1-items-text {
+.rezept-des-tages-div-1-text-item {
 	display: flex;
 	flex-direction: column;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 .rezept-des-tages-div-1-btn {
 	padding: 8px 40px 8px 40px;
