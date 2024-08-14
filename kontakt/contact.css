@@ -58,6 +58,7 @@
 	border: 0px solid;
 	border-radius: 8px;
 	cursor: pointer;
+	color: white;
 }
 
 .submit-btn:hover {
